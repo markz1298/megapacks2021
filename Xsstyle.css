@@ -1,0 +1,60 @@
+html {
+  background: #eee;
+}
+
+.audio-player .play-pause-btn {
+  background-image: url("https://image.flaticon.com/icons/svg/3306/3306569.svg");
+  background-size: cover;
+  width: 40px;
+  height: 40px;
+  margin: 1.2rem 1.6rem 1rem;
+  cursor: pointer;
+}
+.audio-player .play-pause-btn.pause {
+  background-image: url("https://image.flaticon.com/icons/svg/3306/3306567.svg");
+}
+
+.audio-player .rem-time, .audio-player .end-time {
+  cursor: pointer;
+  position: relative;
+  float: right;
+  right: 21px;
+}
+.audio-player .rem-time:before {
+  content: "-";
+}
+.audio-player input[type=range] {
+  width: 100%;
+  -webkit-appearance: none;
+  -moz-apperance: none;
+  border-radius: 6px;
+  height: 6px;
+  margin: 0;
+  background-image: -moz-linear-gradient(left center, #DF7164 0%, #DF7164 0%, #F5D0CC 0%, #F5D0CC 0%);
+}
+.audio-player input[type=range]:focus {
+  outline: none;
+  border: none;
+}
+.audio-player input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none !important;
+  background-color: #df7164;
+  height: 23px;
+  width: 23px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.audio-player input[type=range]::-moz-range-thumb {
+  -moz-appearance: none !important;
+  background-color: #df7164;
+  border: none;
+  height: 23px;
+  width: 23px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.audio-player input[type=range]::-moz-range-track {
+  border: none;
+  background: none;
+  outline: none;
+}
